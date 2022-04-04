@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="topo">
+        <h1>Driven Eats</h1>
+        <h2>Sua comida em 6 minutos</h2>
+    </div>
+    <div class="fundo-pedido escondido">
+        <div class="pedido-pronto">
+            Pedido completo
+            <div class="prato-principal-esolhido">
+                <div class="tipo-prato"></div>
+                <div class="preco-prato"></div>
+            </div>
+            <div class="bebida-escolhida">
+                <div class="tipo-bebida"></div>
+                <div class="preco-bebida"></div>
+            </div>
+            <div class="sobremesa-escolhida">
+                <div class="tipo-sobremesa"></div>
+                <div class="preco-sobremesa"></div>
+            </div>
+           <div class="botao-completo">
+               Pode mandar!!!
+           </div> 
+           <div class="botao-cancela-pedido">
+               Cancela!!
+           </div>
+        </div>
+    </div>
+    <div class="comida">
+        <div class="prato-principal">
+            <h2>Bora forrar o buchinho</h2>
+            <div class="menu">
+                <div class="prato" onclick = "PratoSelecionado(this)">
+                    <ion-icon class="checkmark escondido" name="checkmark-circle"></ion-icon>
+                    <img src="assets/prato-strogonoff.jpg"/>
+                    <h3 class = "titulo">Strogonoff</h3>
+                    <h4>Acompanha arroz e batata palha</h4>
+                    <div class="preco">R$: 29,90</div>
+                </div>
+                <div class="prato" onclick = "PratoSelecionado(this)" >
+                    <ion-icon class="checkmark escondido" name="checkmark-circle"></ion-icon>
+                    <img src="assets/prato-lasanha.jpg"/>
+                    <h3 class = "titulo">Lasanha</h3>
+                    <h4>Acompanha arroz e salada<h4>
+                    <div class="preco">R$: 32,90</div>
+                </div>
+                <div class="prato" onclick = "PratoSelecionado(this)">
+                    <ion-icon class="checkmark escondido" name="checkmark-circle"></ion-icon>
+                    <img src="assets/prato-hamburguer.jpg"/>
+                    <h3 class = "titulo">Hamburguer</h3>
+                    <h4>Acompanha fritas</h4>
+                    <div class="preco">R$: 21,90</div>                
+                </div>
+                <div class="prato " onclick = "PratoSelecionado(this)">
+                    <ion-icon class="checkmark escondido" name="checkmark-circle"></ion-icon>
+                    <img src="assets/prato-feijoada.jpg"/>
+                    <h3 class = "titulo">Feijoada</h3>
+                    <h4>Acompanha arroz, salada, banana frita e torresmo</h4>
+                    <div class="preco">R$: 39,90</div>
+                </div>
+                <div class="prato" onclick = "PratoSelecionado(this)">
+                    <ion-icon class="checkmark escondido" name="checkmark-circle"></ion-icon>
+                    <img src="assets/prato-peixe.jpg"/>
+                    <h3 class = "titulo">Peixe Frito</h3>
+                    <h4>Acompanha arroz e salada</h4>
+                    <div class="preco">R$: 37,90</div>
+                </div>          
+            </div>
+        </div>
+        <div class="bebidas">
+            <h2>Não esquece a bebida para ficar hidratado</h2>
+            <div class="menu">
+                <div class="bebida" onclick = "BebidaSelecionada(this)">
+                    <ion-icon class="checkmark escondido" name="checkmark-circle"></ion-icon>
+                    <img src="assets/bebida-agua.jpg"/>
+                    <h3 class = "titulo">Água</h3>
+                    <h4> Sem gás 500ml</h4>
+                    <div class="preco">R$: 2,90</div>
+                </div>
+                <div class="bebida" onclick = "BebidaSelecionada(this)">
+                    <ion-icon class="checkmark escondido" name="checkmark-circle"></ion-icon>
+                    <img src="assets/bebida-suco-de-abacaxi.jpg"/>
+                    <h3 class = "titulo">Suco de abacaxi </h3>
+                    <h4>Natural 500ml</h4>
+                    <div class="preco">R$: 8,90</div>
+                </div>
+                <div class="bebida" onclick = "BebidaSelecionada(this)">
+                    <ion-icon class="checkmark escondido" name="checkmark-circle"></ion-icon>
+                    <img src="assets/bebida-suco-de-laranja.jpg"/>
+                    <h3 class = "titulo">Suco de laranja </h3>
+                    <h4>Natural 500ml</h4>
+                    <div class="preco">R$: 8,90</div>
+                </div>
+                <div class="bebida" onclick = "BebidaSelecionada(this)">
+                    <ion-icon class="checkmark escondido" name="checkmark-circle"></ion-icon>
+                    <img src="assets/bebida-caipirinha.jpg"/>
+                    <h3 class = "titulo">Caipirinha </h3>
+                    <h4>tradicional com cachaça 350ml</h4>
+                    <div class="preco">R$: 15,90</div>
+                </div>
+                <div class="bebida" onclick = "BebidaSelecionada(this)">
+                    <ion-icon class="checkmark escondido" name="checkmark-circle"></ion-icon>
+                    <img src="assets/bebida-cerveja.jpg"/>
+                    <h3 class = "titulo">Cerveja Pilsen </h3>
+                    <h4>1 Litro</h4>
+                    <div class="preco">R$: 12,90</div>
+                </div>
+            </div>
+            
+        </div>
+        <div class="sobremesas">
+            <h2>Um docinho, porque ninguém é de ferro</h2>
+            <div class="menu">
+                <div class="sobremesa" onclick = "SobremesaSelecionada(this)">
+                    <ion-icon class="checkmark escondido" name="checkmark-circle"></ion-icon>
+                    <img src="assets/sobremesa-bolo-no-pote.jpg"/>
+                    <h3 class = "titulo">Bolo no pote de chocolate ao leite</h3>
+                    <h4>400g, com recheio de ganache</h4>
+                    <div class="preco">R$: 12,90</div>
+                </div>
+                <div class="sobremesa" onclick = "SobremesaSelecionada(this)">
+                    <ion-icon class="checkmark escondido" name="checkmark-circle"></ion-icon>
+                    <img src="assets/sobremesa-pudim.jpg"/>
+                    <h3 class = "titulo">Pudim de leite</h3>
+                    <h4>400g, com cobertura de caramelo</h4>
+                    <div class="preco">R$: 9,90</div>
+                </div>
+                <div class="sobremesa" onclick = "SobremesaSelecionada(this)">
+                    <ion-icon class="checkmark escondido" name="checkmark-circle"></ion-icon>
+                    <img src="assets/sobremesa-brigadeiro.jpg"/>
+                    <h3 class = "titulo">Brigadeiros</h3>
+                    <h4> 4 unidades de 40g cada</h4>
+                    <div class="preco">R$: 9,90</div>
+                </div>
+                <div class="sobremesa" onclick = "SobremesaSelecionada(this)">
+                    <ion-icon class="checkmark escondido" name="checkmark-circle"></ion-icon>
+                    <img src="assets/sobremesa-mousse-de-maracuja.jpg"/>
+                    <h3 class = "titulo">Mousse de maracujá</h3>
+                    <h4>400g calda da fruta</h4>
+                    <div class="preco">R$: 12,90</div>
+                </div>
+                <div class="sobremesa" onclick = "SobremesaSelecionada(this)">
+                    <ion-icon class="checkmark escondido" name="checkmark-circle"></ion-icon>
+                    <img src="assets/sobremesa-pave-de-chocolate.jpg"/>
+                    <h3 class = "titulo">Pavê de chocolate</h3>
+                    <h4>chocolate meio amargo</h4>
+                    <div class="preco">R$: 14,90</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="botao-de-pedido">
+        <div class="botao-pedido-nao-finalizado">
+            Escolha 3 itens para fechar 
+        </div>
+        <div class="botao-pedido-completo escondido" onclick="fecharPedido()" >
+            Bora merendar! 
+        </div>
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script src="codigo.js"></script>
+    
+</body>
+</html>
